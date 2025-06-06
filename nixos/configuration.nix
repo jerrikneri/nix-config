@@ -69,6 +69,7 @@ permitRootLogin = "no";       # Change to "yes" if you really want root SSH logi
    git
    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
    wget
+   zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
