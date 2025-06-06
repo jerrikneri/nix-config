@@ -51,8 +51,10 @@
   # SSH
   services.openssh = {
     enable = true;
-permitRootLogin = "no";       # Change to "yes" if you really want root SSH login (not recommended).
-  passwordAuthentication = false; # Use keys instead of passwords.
+    settings = {
+      PermitRootLogin = "no";       # Change to "yes" if you really want root SSH login (not recommended).
+      PasswordAuthentication = false; # Use keys instead of passwords.
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -67,6 +69,7 @@ permitRootLogin = "no";       # Change to "yes" if you really want root SSH logi
   # $ nix search wget
   environment.systemPackages = with pkgs; [
    git
+   tmux
    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
    wget
    zsh
