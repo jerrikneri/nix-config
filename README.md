@@ -1,6 +1,6 @@
 Test
 ## Symlink /etc/nixos
-sudo ln -s ~/code/nix-config/nixos /etc/nixos
+sudo ln -s ~/code/nix-config/hosts/nixos /etc/nixos
 
 ## Clear old builds
 sudo nix-collect-garbage -D
