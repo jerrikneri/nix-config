@@ -69,30 +69,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-   alejandra # Uncompromising Nix Code Formatter
-   alacritty
-   bat
-   btop
-   distrobox
-   diff-so-fancy
-   fzf
    gcc
-   git
-   lazydocker
-   lazygit
-   lazysql
-   neovim
-   newsboat
-   nil # Nix Language Server
-   ripgrep
-   tmux
-   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   #vimPlugins.LazyVim
-   wget
-   yazi
-   zsh-syntax-highlighting
-   zsh-vi-mode
-   zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

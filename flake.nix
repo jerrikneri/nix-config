@@ -26,7 +26,7 @@
           ./hosts/nixos/configuration.nix
           ./modules/common/dev.nix
           ./modules/common/shell.nix
-          ./modules/nixos/system.nix
+          ./modules/linux/system.nix
           home-manager.nixosModules.default
         ];
       };
