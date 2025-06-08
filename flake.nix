@@ -24,7 +24,7 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/nixos/configuration.nix
-          ./modules/common/dev.nix
+          ./modules/common/packages/index.nix
           ./modules/common/shell.nix
           ./modules/linux/system.nix
           home-manager.nixosModules.default
@@ -35,7 +35,7 @@
         system = "aarch64-darwin";
         modules = [
           ./hosts/macbook/default.nix
-          ./modules/common/dev.nix
+          ./modules/common/packages/index.nix
           ./modules/common/shell.nix
           ./modules/darwin/system.nix
           home-manager.darwinModules.default
@@ -46,7 +46,7 @@
         pkgs = import nixpkgs { system = "x86_64-linux"; };
         modules = [
           ./hosts/arch/default.nix
-          ./modules/common/dev.nix
+          ./modules/common/packages/index.nix
           ./modules/common/shell.nix
         ];
       };
