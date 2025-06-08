@@ -31,10 +31,10 @@
         ];
       };
 
-      darwinConfigurations.macbook = darwin.lib.darwinSystem {
+      darwinConfigurations.darwin = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
-          ./hosts/macbook/default.nix
+          ./hosts/darwin/default.nix
           ./modules/common/packages/index.nix
           ./modules/common/shell.nix
           ./modules/darwin/system.nix
@@ -42,7 +42,7 @@
         ];
       };
 
-      homeConfigurations.arch= home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.arch = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs { system = "x86_64-linux"; };
         modules = [
           ./hosts/arch/default.nix
